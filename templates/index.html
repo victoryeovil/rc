@@ -1,0 +1,970 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link href="{% static 'dist/css/main.css'%}" rel="stylesheet">
+
+    <!-- Your page title -->
+    <title>Renewed Church</title>
+
+    <!-- Place Custom Favicon here -->
+    <link rel="shortcut icon" href="{% static 'images/logo-dark.png'%}" type="image/png">
+
+
+  </head>
+
+  <body>
+<!--
+    <div class="page-loader">
+      <div class="loader"><img src="images/logo-sm.svg" alt=""></div>
+    </div>
+
+    <!-- =================== SITE HEADER BEGINS ============================= -->
+
+    <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
+      data-onscroll-logo="{% static 'images/logo-dark.png'%}">
+
+      <div class="container">
+
+        <nav class="header__nav bottom-nav">
+
+          <div class="header__logo brand--logo">
+            <a href="index.html"><img src="{% static 'images/logo-dark.png'%}" alt="Renewed Church"></a>
+          </div>
+
+          <div class="header__mobile--opener hide-on-lg">
+            <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu"
+              data-toggle="mobile-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+          </div>
+
+          <ul class="header__navitems show-on-lg" id="mobile-menu">
+
+            <!-- Contains donation button for mobile and tablet devices -->
+            <li class="header__extra">
+              <div class="cta">
+                <a href="https://www.sandbox.paypal.com/donate/?hosted_button_id=FN3TA47SMLHQN" class="button button-block-sm">Donate</a>
+              </div>
+            </li><!-- .header__extra ends -->
+
+            <li class="header__list active"><a href="/">Home</a></li>
+            <!-- .header__list ends -->
+
+            <li class="header__list"><a href="/about/">About</a></li><!-- .header__list ends -->
+
+            <li class="header__list">
+              <a href="" class="dropdown-link">Sermons</a>
+
+              <div class="header__submenu">
+                <ul>
+
+                  <li class="header__list"><a href="/sermons/">Sermons</a></li>
+                  
+
+                </ul>
+
+              </div><!-- .header__submenu ends -->
+            </li><!-- .header__list ends -->
+
+            <li class="header__list"><a href="/events/">Events</a></li>
+            <li class="header__list"><a href="/ministry/">Ministries</a></li>
+            <li class="header__list"><a href="/events/">Events</a></li>
+            <li class="header__list"><a href="/gallery/">Gallery</a></li>
+
+            <li class="header__list"><a href="/contact/">Contact</a></li>
+            <!-- .header__list ends -->
+
+          </ul><!-- .header__navitems ends -->
+
+          <!-- Contains Shopping cart and donation button -->
+          <div class="header__extra desktop-version">
+            <div class="cta hide-on-sm show-on-lg">
+              <a href="https://www.sandbox.paypal.com/donate/?hosted_button_id=FN3TA47SMLHQN" class="button">Donate</a>
+            </div>
+          </div><!-- .header__extra ends -->
+
+        </nav><!-- .header__nav ends -->
+
+      </div><!-- .container ends -->
+
+    </header><!-- .header ends -->
+
+    <!-- =================== SITE HEADER ENDS ============================= -->
+
+
+
+    <!-- =================== MAIN SECTION BEGINS ============================= -->
+
+    <main>
+
+      <!-- HERO SECTION STARTS -->
+      <section class="hero full-width">
+
+        <div class="hero__carousel owl-carousel" id="hero-carousel">
+          <!-- Homepage slider -->
+
+          <div class="slide display-flex-column justify-align-center" id="first-slide">
+
+            <div class="container">
+
+              <div class="hero__content text-center">
+
+                <span class="hero__intro">We are glad you are here</span>
+                <h1>Welcome to Renewed Church</h1>
+                <p class="leading">Teaching ,Preaching and Living the Word of God Fulfilling the Great Commission</p>
+
+                <div class="hero__cta">
+                  <a href="/about" class="button">Learn more</a>
+                </div>
+
+              </div><!-- .hero__content -->
+
+            </div><!-- .container ends -->
+
+          </div><!-- #first-slide ends -->
+
+          <div class="slide display-flex-column justify-align-center" id="second-slide">
+
+            <div class="container">
+
+              <div class="hero__content text-center">
+
+                <span class="hero__intro">We are glad you are here</span>
+                <h1>Come fellowship with us</h1>
+                <p class="leading">We are a bible believing church who believes in God the father ,the Son and the Holy Spirit.</p>
+
+                <div class="hero__cta">
+                  <a href="" class="button">Learn more</a>
+                </div>
+
+              </div><!-- .hero__content -->
+
+            </div><!-- .container ends -->
+
+          </div><!-- #second-slide ends -->
+
+        </div> <!-- #hero-carousel ends -->
+
+      </section><!-- .hero ends -->
+      <!-- HERO SECTION ENDS -->
+
+
+      <!-- NEXT EVENT STARTS -->
+      <div class="next-event default-section-spacing background-primary">
+
+        <div class="container">
+
+          <div class="row align-items-center">
+
+            <div class="flex-md-9">
+
+              <div class="intro fancy-font">Next event</div>
+              <div class="event">
+                <div class="event__metas horizontal">
+                  <div class="event__meta--date meta"><i class="ri-calendar-event-line"></i> <span>02/28/2020</span>
+                  </div>
+                  <div class="event__meta--time meta"><i class="ri-time-line"></i> <span>11:45 AM - 12:45 PM</span>
+                  </div>
+                  <div class="event__meta--location meta"><i class="ri-map-pin-line"></i> <span>123 Jay St, Albany, NY
+                      12203</span></div>
+                </div><!-- .event__metas -->
+
+                <div class="event__title">
+                  <h2>Scholarship fundraiser @RC</h2>
+                </div>
+              </div><!-- .event ends -->
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-3">
+              <div class="next-event__cta">
+                <a href="events-single.html" class="button button-block-sm">Learn more</a>
+              </div>
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .container ends -->
+
+      </div><!-- .next-event ends -->
+      <!-- NEXT EVENT ENDS -->
+
+
+      <!-- LAST SERMON SECTION STARTS -->
+      <section class="last-sermon default-section-spacing">
+
+        <div class="container">
+
+          <div class="row align-items-center">
+
+            <div class="flex-md-6 flex-lg-5">
+
+              <!-- Using Animate On Scroll (AOS) plugin on the card -->
+              <div class="card sermon" data-aos="fade-up" data-aos-offset="400">
+
+                <div class="card__header">
+                  <img src="{% static 'images/sermon.JPG'%}" alt="A man reading the Holy Bible"
+                    class="card__image sermon__image">
+                </div><!-- .card__header ends -->
+
+                <div class="card__footer">
+                  <div class="sermon__download">
+                    <span class="text-white">Download</span>
+                    <a href=""><i class="ri-video-line"></i></a>
+                    <a href=""><i class="ri-headphone-line"></i></a>
+                    <a href=""><i class="ri-file-pdf-line"></i></a>
+                  </div>
+                </div><!-- .card__footer ends -->
+
+              </div><!-- .card ends -->
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-6 flex-lg-7">
+
+              <!-- Using Animate On Scroll (AOS) plugin again here -->
+              <div class="last-sermon__content" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
+
+                <div class="section-heading">
+                  <span>Sermons</span>
+                  <h2>Last week sermon</h2>
+                </div><!-- .section-heading ends -->
+
+                <div class="sermon__metas">
+                  <div class="sermon__meta--date meta"><i class="ri-calendar-event-line"></i> <span>02/28/2020</span>
+                  </div>
+                  <div class="sermon__meta--speaker meta"><i class="ri-user-star-line"></i> <span>Pastor Erik B.
+                      Chikwira</span>
+                  </div>
+                </div><!-- .sermon__metas -->
+
+                <div class="sermon__content">
+                  <div class="title">
+                    <h3>Loving Jesus with all your heart, mind, and soul</h3>
+                  </div>
+                  <div class="excerpt">
+                    <p>The sermon centers on the commandment to love Jesus with all our heart, mind, and soul. This directive serves as the foundation of our faith and requires a holistic approach to our relationship with Christ. Loving Him with our heart involves emotional devotion, while loving with our mind demands intellectual engagement through studying His Word. Lastly, loving with our soul signifies a total surrender of our identity to His lordship. This comprehensive love has the power to transform our lives, influencing our decisions and character. Challenges may arise, but remembering His sacrificial love keeps us devoted. Ultimately, loving Jesus completely leads to a purpose-filled, joyous journey of faith..</p>
+                  </div>
+                </div>
+
+                <div class="sermon__link">
+                  <a href="" class="button">Read more</a>
+                </div>
+
+              </div><!-- .last-sermon__content ends -->
+
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .container ends -->
+
+      </section><!-- .last-sermon ends -->
+      <!-- LAST SERMON SECTION ENDS -->
+
+
+      <!-- OUR MINISTRIES SECTION STARTS -->
+      <section class="our-ministries default-section-spacing background-lighter-gray">
+
+        <div class="container">
+
+          <div class="section-heading text-center">
+            <span>Our ministries</span>
+            <h2>Check out some of our ministries</h2>
+          </div><!-- .section-heading ends -->
+
+          <div class="row">
+
+            <div class="flex-lg-6">
+
+              <div class="card ministry">
+
+                <div class="card__header">
+                  <img src="{% static 'images/ministry-1@1.5x.jpg'%}" alt="A man holding and reading the Holy Bible"
+                    class="card__image ministry__image">
+                </div><!-- .card__header ends -->
+
+                <div class="card__footer">
+
+                  <div class="ministry__title">
+                    <h3>Men's ministry</h3>
+                  </div>
+
+                  <div class="ministry__meta"><i class="ri-group-line"></i> <span>14 Brothers</span></div>
+
+                  <div class="ministry__content">
+                    <div class="excerpt">
+                      <p>Be on your guard; stand firm in the faith; be courageous; be strong. Do everything in love.</p>
+                    </div>
+                    <div class="ministry__link"><a href="ministries-single.html" class="button">Learn more</a></div>
+                  </div><!-- .ministry__content ends -->
+
+                </div><!-- .card__footer ends -->
+
+              </div><!-- .card ends -->
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-lg-6">
+
+              <div class="row mar-b-sm">
+
+                <div class="flex-lg-12">
+
+                  <div class="card ministry custom-height">
+
+                    <div class="card__header">
+                      <img src="{% static 'images/ministry-3@1.5x.jpg'%}" alt="A little boy laughing while reading the Holy Bible"
+                        class="card__image ministry__image">
+                    </div><!-- .card__header ends -->
+
+                    <div class="card__footer">
+
+                      <div class="ministry__title">
+                        <h3>Children's ministry</h3>
+                      </div>
+
+                      <div class="ministry__meta"><i class="ri-group-line"></i> <span>26 Children</span></div>
+
+                      <div class="ministry__content">
+                        <div class="excerpt">
+                          <p>Jesus said, 'Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these</p>
+                        </div>
+                        <div class="ministry__link"><a href="ministries-single.html" class="button">Learn more</a></div>
+                      </div><!-- .ministry__content ends -->
+
+                    </div><!-- .card__footer ends -->
+
+                  </div><!-- .card ends -->
+
+                </div><!-- .flex-* ends -->
+
+              </div><!-- .rows -->
+
+              <div class="row">
+
+                <div class="flex-lg-12">
+
+                  <div class="card ministry custom-height">
+
+                    <div class="card__header">
+                      <img src="{% static 'images/ministry-2@1.5x.jpg'%}" alt="Young women praying"
+                        class="card__image ministry__image">
+                    </div><!-- .card__header ends -->
+
+                    <div class="card__footer">
+
+                      <div class="ministry__title">
+                        <h3>Women's ministry</h3>
+                      </div>
+
+                      <div class="ministry__meta"><i class="ri-group-line"></i> <span>12 Sisters</span></div>
+
+                      <div class="ministry__content">
+                        <div class="excerpt">
+                          <p>She is clothed with strength and dignity; she can laugh at the days to come.</p>
+                        </div>
+                        <div class="ministry__link"><a href="ministries-single.html" class="button">Learn more</a></div>
+                      </div><!-- .ministry__content ends -->
+
+                    </div><!-- .card__footer ends -->
+
+                  </div><!-- .card ends -->
+
+                </div><!-- .flex-* ends -->
+
+              </div><!-- .rows -->
+
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .container ends -->
+
+      </section><!-- .our-ministries ends -->
+      <!-- OUR MINISTRIES SECTION ENDS -->
+
+
+      <!-- OUR GALLERY STARTS -->
+      <section class="our-gallery gallery gallery--equal-grid default-section-spacing text-center">
+
+        <div class="section-heading">
+          <span>Our gallery</span>
+          <h2>Explore our church</h2>
+        </div><!-- .section-heading ends -->
+
+        <div class="row">
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href ="{% static '/images/gallery-1@2x.jpg' %}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of the Holy Bible">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery-1@1.5x.jpg'%}" alt="Picture of the Holy Bible" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href ="{% static 'images/gallery-2@2x.jpg'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of Jesus on a medal cross">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery-2@1.5x.jpg'%}" alt="Picture of Jesus on a medal cross" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery-3@2x.jpg'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Bible study">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery-3@1.5x.jpg'%}" alt="Bible study" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery.JPG'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Inside of a church">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery.JPG'%}" alt="Inside of a church" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery-5@2x.jpg'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of people worshiping in church">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery-5@1.5x.jpg'%}" alt="Picture of people worshiping in church" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery1.JPG'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of women laughing">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery1.JPG'%}" alt="Picture of women laughing" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery3.JPG'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of a worship leader singing">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery3.JPG'%}" alt="Picture of a worship leader singing" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+          <div class="flex-md-6 flex-lg-3 no-padding no-margin">
+
+            <a href="{% static 'images/gallery2.JPG'%}" class="gallery-link" data-lightbox="church-picture"
+              data-title="Picture of a smart kid at school">
+
+              <div class="card gallery__card">
+
+                <div class="card__header">
+                  <img src="{% static 'images/gallery2.JPG'%}" alt="Picture of a smart kid at school" class="card__image">
+                </div>
+
+              </div><!-- .card ends -->
+
+            </a><!-- .gallery-link -->
+
+          </div><!-- .flex-* ends -->
+
+        </div><!-- .row ends -->
+
+      </section><!-- .our-gallery ends -->
+      <!-- OUR GALLERY ENDS -->
+
+
+      <!-- OUR TESTIMONIALS SECTION STARTS -->
+      <section class="our-testimonial default-section-spacing background-secondary">
+
+        <div class="our-testimonial__background--cover"></div>
+        <!-- .our-testimonial__background--cover ends -->
+
+        <div class="our-testimonial__content">
+
+          <div class="container">
+
+            <div class="row align-items-center">
+
+              <div class="flex-lg-5"></div>
+
+              <div class="flex-lg-7">
+
+                <div class="section-heading text-white">
+                  <span>Testimonials</span>
+                  <h2>What people are saying...</h2>
+                </div><!-- .section-heading ends -->
+
+                <div class="row">
+
+                  <div class="flex-md-6 flex-lg-12 mar-b-sm">
+
+                    <div class="testimonial">
+
+                      <div class="testimonial__avatar">
+                        <div class="card card--picture card--square testimonial__user">
+
+                          <div class="card__header">
+                            <img src="{% static 'images/user-1.jpg'%}" alt="A man" class="card__image">
+                          </div><!-- .card__header ends -->
+
+                          <div class="card__footer">
+                            <div class="testimonial__author">George E. Pugh</div>
+                          </div><!-- .card__footer ends -->
+
+                        </div><!-- .card -->
+                      </div><!-- .testimonial__avatar ends -->
+
+                      <div class="testimonial__text text-white">
+                         From Darkness to Light: Lost in addiction, I found hope through Jesus. Embracing faith, I broke free from despair, restored relationships, and discovered a purpose in helping others find the radiant light within.
+                         With nothing to lose, I decided to give faith a chance. I started attending church, reading the Bible, and praying. Gradually, I felt a weight lifted off my shoulders as I experienced God's love and forgiveness. It wasn't an instant transformation, but day by day, I found strength to resist my old temptations.
+
+                      </div>
+
+                    </div><!-- .testimonial -->
+
+                  </div><!-- .flex-* ends -->
+
+                  <div class="flex-md-6 flex-lg-12 mar-b-sm">
+
+                    <div class="testimonial">
+
+                      <div class="testimonial__avatar">
+                        <div class="card card--picture card--square testimonial__user">
+
+                          <div class="card__header">
+                            <img src="{% static 'images/user-3.jpg'%}" alt="A woman" class="card__image">
+                          </div><!-- .card__header ends -->
+
+                          <div class="card__footer">
+                            <div class="testimonial__author">Nancy A. Austin</div>
+                          </div><!-- .card__footer ends -->
+
+                        </div><!-- .card -->
+                      </div><!-- .testimonial__avatar ends -->
+
+                      <div class="testimonial__text text-white">
+                       A Journey of Healing:Overcoming past abuse, I encountered God's love, releasing pain, shame, and bitterness. Forgiveness and healing transformed scars into a testament of God's grace, guiding others towards their own restoration.
+                       Through a church event, I heard about God's grace and His ability to heal even the most broken of hearts. With a mixture of skepticism and desperation, I turned to Him. Through prayer and counseling, I began to slowly release the burdens I'd carried for so long. I forgave those who hurt me, not because they deserved it, but because God's love had taught me to extend grace.
+
+                      </div>
+
+                    </div><!-- .testimonial -->
+
+                  </div><!-- .flex-* ends -->
+
+                  <div class="flex-md-12 flex-lg-12">
+
+                    <div class="testimonial">
+
+                      <div class="testimonial__avatar">
+                        <div class="card card--picture card--square testimonial__user">
+
+                          <div class="card__header">
+                            <img src="{% static 'images/user-2.jpg'%}" alt="A man" class="card__image">
+                          </div><!-- .card__header ends -->
+
+                          <div class="card__footer">
+                            <div class="testimonial__author">Joe K. Liley</div>
+                          </div><!-- .card__footer ends -->
+
+                        </div><!-- .card -->
+                      </div><!-- .testimonial__avatar ends -->
+
+                      <div class="testimonial__text text-white">
+                    Finding Purpose: Pursuing success led to emptiness until faith redirected me. Serving others replaced material pursuits, unveiling the joy of purpose. From self-centered ambitions to compassionate service, my life underwent a transformative journey.Today, I stand as a testimony to God's healing power. The scars remain, but they no longer define me. I've found a new identity in Christ, and I've dedicated my life to helping others find healing through faith.
+
+                      </div>
+
+                    </div><!-- .testimonial -->
+
+                  </div><!-- .flex-* ends -->
+
+                </div><!-- .row ends -->
+
+              </div><!-- .flex-* ends -->
+
+            </div><!-- .row ends -->
+
+          </div><!-- .container ends -->
+
+        </div><!-- .our-testimonial__content ends -->
+
+      </section><!-- .our-testimonial ends -->
+      <!-- OUR TESTIMONIALS SECTION ENDS -->
+
+
+      <!-- RECENT ARTICLES STARTS -->
+      <section class="recent-articles default-section-spacing text-center">
+
+        <div class="container">
+
+          <div class="section-heading">
+            <span>Our blog</span>
+            <h2>Fresh articles from our blog</h2>
+          </div><!-- .section-heading ends -->
+
+          <div class="row">
+
+            <div class="flex-md-6 flex-lg-4">
+
+              <div class="card blog">
+
+                <div class="card__header">
+                  <img src="{% static 'images/IMG-6608.JPG'%}" alt="A man praying standing" class="card__image blog__image">
+                </div><!-- .card__header ends -->
+
+                <div class="card__footer">
+
+                  <div class="blog__metas">
+                    <div class="blog__meta--date meta"><i class="ri-calendar-event-line"></i> <span>02/28/2020</span>
+                    </div>
+                    <div class="blog__meta--speaker meta"><i class="ri-user-star-line"></i> <span>Pastor Anold 
+                        Chikwira</span>
+                    </div>
+                  </div><!-- .blog__metas -->
+
+                  <div class="blog__title">
+                    <h3>Living for Christ requires boldness</h3>
+                  </div>
+
+                  <div class="blog__content">
+                    <div class="excerpt">
+                      <p>The sermon discusses the essential aspect of "Living for Christ Requires Boldness." It highlights how, as believers, we are called to courageously stand up for our faith, even in the face of challenges. Drawing inspiration from biblical examples, the sermon emphasizes that boldness comes from a deep relationship with God. Through personal anecdotes and scriptural insights, attendees are encouraged to step out of their comfort zones and fearlessly share their faith, embracing the transformative power of living boldly for Christ.</p>
+                    </div>
+                    <div class="blog__link"><a href="blog-single.html" class="button">Read more</a></div>
+                  </div><!-- .blog__content ends -->
+
+                </div><!-- .card__footer ends -->
+
+              </div><!-- .card ends -->
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-6 flex-lg-4">
+
+              <div class="card blog">
+
+                <div class="card__header">
+                  <img src="{% static 'images/post-2@1.5x.jpg'%}" alt="Women praying" class="card__image blog__image">
+                </div><!-- .card__header ends -->
+
+                <div class="card__footer">
+
+                  <div class="blog__metas">
+                    <div class="blog__meta--date meta"><i class="ri-calendar-event-line"></i> <span>02/28/2020</span>
+                    </div>
+                    <div class="blog__meta--speaker meta"><i class="ri-user-star-line"></i> <span>Pastor Anold 
+                        Chikwira</span>
+                    </div>
+                  </div><!-- .blog__metas -->
+
+                  <div class="blog__title">
+                    <h3>Living in the last days as Christians</h3>
+                  </div>
+
+                  <div class="blog__content">
+                    <div class="excerpt">
+                      <p>The sermon explores the concept of "Living in the Last Days as Christians." It delves into the biblical teachings about the signs of the end times and how they relate to believers today. The sermon emphasizes the importance of spiritual readiness, cultivating a deeper relationship with God, and sharing the message of salvation with urgency. Through relevant scriptures and practical guidance, attendees are encouraged to navigate the challenges of the modern world while maintaining a steadfast faith, hope, and a sense of purpose as they await Christ's return.</p>
+                    </div>
+                    <div class="blog__link"><a href="blog-single.html" class="button">Read more</a></div>
+                  </div><!-- .blog__content ends -->
+
+                </div><!-- .card__footer ends -->
+
+              </div><!-- .card ends -->
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-12 flex-lg-4">
+
+              <div class="card blog">
+
+                <div class="card__header">
+                  <img src="{% static 'images/sermon-1@1.5x.jpg'%}" alt="A man reading the Holy Bible"
+                    class="card__image blog__image">
+                </div><!-- .card__header ends -->
+
+                <div class="card__footer">
+
+                  <div class="blog__metas">
+                    <div class="blog__meta--date meta"><i class="ri-calendar-event-line"></i> <span>02/28/2020</span>
+                    </div>
+                    <div class="blog__meta--speaker meta"><i class="ri-user-star-line"></i> <span>Pastor Anold
+                        Chikwira</span>
+                    </div>
+                  </div><!-- .blog__metas -->
+
+                  <div class="blog__title">
+                    <h3>Understanding the Bible requires dedication</h3>
+                  </div>
+
+                  <div class="blog__content">
+                    <div class="excerpt">
+                      <p>The message underscores the significance of dedication in "Understanding the Bible." It explores how the Bible, while profound, requires a committed and patient approach to grasp its depth and meaning. The sermon emphasizes the role of prayer, study, and seeking wisdom from God in comprehending the Scriptures. Attendees are encouraged to allocate time for consistent study, engage in reflection, and seek guidance from fellow believers. By devoting themselves to understanding the Word, they can unlock its transformative power and apply its principles to their lives.</p>
+                    </div>
+                    <div class="blog__link"><a href="blog-single.html" class="button">Read more</a></div>
+                  </div><!-- .blog__content ends -->
+
+                </div><!-- .card__footer ends -->
+
+              </div><!-- .card ends -->
+
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .container ends -->
+
+      </section><!-- .recent-articles ends -->
+      <!-- RECENT ARTICLES ENDS -->
+
+
+      <!-- SUBSCRIPTION SECTION STARTS -->
+      <div class="subscription default-section-spacing background-lighter-gray">
+
+        <div class="container">
+
+          <div class="section-heading">
+            <span>Stay in touch</span>
+            <h2>Join our mailing list</h2>
+          </div><!-- .section-heading ends -->
+
+          <form action="#" class="form">
+
+            <div class="row">
+
+              <div class="flex-md-9">
+                <div class="form__group">
+                  <input type="email" class="form__input" placeholder="Enter your valid email address">
+                </div>
+              </div><!-- .flex-* ends -->
+
+              <div class="flex-md-3">
+                <button type="submit" class="button button-block-sm form__submit">Subscribe today</button>
+              </div><!-- .flex-* ends -->
+
+            </div><!-- .row ends -->
+
+          </form><!-- .form ends -->
+
+        </div><!-- .container ends -->
+
+      </div><!-- .subscription ends -->
+      <!-- SUBSCRIPTION SECTION ENDS -->
+
+
+      <!-- TIME AND LOCATION STARTS -->
+      <section class="time-location">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="flex-lg-6">
+
+              <div class="time-location__content default-section-spacing">
+
+                <div class="section-heading">
+                  <span>Time and location</span>
+                  <h2>Come and worship with us</h2>
+                </div><!-- .section-heading ends -->
+
+                <div class="time-location__time">
+
+                  <div class="info">
+                    <div class="day bold">Sunday:</div>
+                    <div class="time">
+                      <span>9:00 am - 10:30 am (Sunday school)</span>
+                      <span>11:00 am - 1:30 pm (Morning service)</span>
+                      <span>4:00 pm - 5:30 pm (Evening service)</span>
+                    </div>
+                    <div class="day bold">Friday:</div>
+                    <div class="time">
+                    
+                      <span>4:00 pm - 5:30 pm (Evening service)</span>
+                    </div>
+                  </div>
+
+                  <div class="info">
+                    <div class="location bold">Location:</div>
+                    <div class="location-info"><span>Online Zoom Meeting</span></div>
+                  </div>
+
+                </div><!-- .time-location__time ends -->
+
+              </div>
+
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .container ends -->
+
+        <div class="time-location__map"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.500392314035!2d-73.76198333429348!3d42.650750424686215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de0a3cdc54f8b3%3A0x369f717b85d43cfc!2sMadison%20Ave%20%26%20Empire%20State%20Plaza!5e0!3m2!1sen!2sus!4v1583133727681!5m2!1sen!2sus"
+            style="border:0;" allowfullscreen=""></iframe></div>
+
+
+      </section><!-- .time-location ends -->
+      <!-- TIME AND LOCATION ENDS -->
+
+    </main><!-- main ends -->
+
+    <!-- =================== MAIN SECTION ENDS ============================= -->
+
+
+    <!-- SCROLL BACK TO TOP BEGINS -->
+    <div class="scroll-to-top"><i class="ri-arrow-up-line"></i></div>
+    <!-- SCROLL BACK TO TOP ENDS -->
+
+
+    <!-- =================== SITE FOOTER BEGINS ============================= -->
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <div class="footer__top display-flex justify-align-center">
+
+          <div class="footer__logo">
+            <div class="logo-wrapper">
+              <img src="images/logo-dark.png" alt="Small logo">
+            </div>
+          </div>
+
+        </div><!-- .footer__top ends -->
+
+        <div class="footer__bottom">
+
+          <div class="row align-items-center">
+
+            <div class="flex-md-6 flex-lg-4">
+
+              <div class="footer__info copyright">&copy; 2023 - Renewed Church - All Rights Reserved</div>
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-6 flex-lg-4">
+
+              <div class="footer__info credit">Designed and developed by Victor Marisa</div>
+
+            </div><!-- .flex-* ends -->
+
+            <div class="flex-md-6 flex-lg-4">
+
+              <div class="footer__info social">
+                <span>Follow us on social medias</span>
+                <div class="social__icons">
+                  <a href=""><i class="ri-facebook-line"></i></a>
+                  <a href=""><i class="ri-twitter-line"></i></a>
+                  <a href=""><i class="ri-linkedin-line"></i></a>
+                </div>
+              </div>
+
+            </div><!-- .flex-* ends -->
+
+          </div><!-- .row ends -->
+
+        </div><!-- .footer__top ends -->
+
+      </div><!-- .container ends -->
+
+    </footer><!-- footer ends -->
+
+    <!-- =================== SITE FOOTER ENDS ============================= -->
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- loading in JQuery locally if CDN failed -->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+    <!-- Owl Carousel script -->
+    <script src="{% static 'js/plugins/owl.carousel.js'%}"></script>
+
+    <!-- JQuery Credit Card script -->
+    <script src="{% static 'js/plugins/jquery.card.js'%}"></script>
+    <!-- Animate On Scroll script -->
+    <script src="{% static 'js/plugins/aos.js'%}"></script>
+    <!-- Lightbox script -->
+    <script src="{% static 'js/plugins/lightbox.min.js'%}"></script>
+    <!-- Main (custom) script -->
+    <script src="{% static 'dist/js/main.min.js'%}"></script>
+
+  </body>
+
+</html>

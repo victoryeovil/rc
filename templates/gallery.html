@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link href="{% static 'dist/css/main.css'%}" rel="stylesheet">
+
+    <!-- Your page title -->
+    <title>About | Renewed Church</title>
+
+    <!-- Place Custom Favicon here -->
+    <link rel="shortcut icon" href="{% static 'images/logo-dark.png'%}" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  </head>
+
+  <body>
+    <!--
+    <div class="page-loader">
+      <div class="loader"><img src="images/logo-sm.svg" alt=""></div>
+    </div>
+
+     =================== SITE HEADER BEGINS ============================= -->
+
+    <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
+      data-onscroll-logo="{% static 'images/logo-dark.png'%}">
+
+      <div class="container">
+
+        <nav class="header__nav bottom-nav">
+
+          <div class="header__logo brand--logo">
+            <a href="/"><img src="{% static 'images/logo-dark.png'%}" alt="Renewed Church"></a>
+          </div>
+
+          <div class="header__mobile--opener hide-on-lg">
+            <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu"
+              data-toggle="mobile-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+          </div>
+
+          <ul class="header__navitems show-on-lg" id="mobile-menu">
+
+            <!-- Contains donation button for mobile and tablet devices -->
+            <li class="header__extra">
+              <div class="cta">
+                <a href="https://www.sandbox.paypal.com/donate/?hosted_button_id=FN3TA47SMLHQN" class="button button-block-sm">Donate</a>
+              </div>
+            </li><!-- .header__extra ends -->
+
+            <li class="header__list active"><a href="">Home</a></li>
+            <!-- .header__list ends -->
+
+            <li class="header__list"><a href="/about/">About</a></li><!-- .header__list ends -->
+
+            <li class="header__list">
+              <a href="" class="dropdown-link">Sermons</a>
+
+              <div class="header__submenu">
+                <ul>
+
+                  <li class="header__list"><a href="/sermons/">Sermons</a></li>
+                  
+
+                </ul>
+
+              </div><!-- .header__submenu ends -->
+            </li><!-- .header__list ends -->
+
+            <li class="header__list"><a href="/events/">Events</a></li>
+            <li class="header__list"><a href="/ministry/">Ministries</a></li>
+            <li class="header__list"><a href="/gallery/">Gallery</a></li>
+ 
+
+            <li class="header__list"><a href="/contact/">Contact</a></li>
+            <!-- .header__list ends -->
+
+          </ul><!-- .header__navitems ends -->
+
+          <!-- Contains Shopping cart and donation button -->
+          <div class="header__extra desktop-version">
+            <div class="cta hide-on-sm show-on-lg">
+              <a href="https://www.sandbox.paypal.com/donate/?hosted_button_id=FN3TA47SMLHQN" class="button">Donate</a>
+            </div>
+          </div><!-- .header__extra ends -->
+
+        </nav><!-- .header__nav ends -->
+
+      </div><!-- .container ends -->
+
+    </header><!-- .header ends -->
+
+    <main>
+
+        <!-- BANNER SECTION STARTS -->
+        <section class="banner full-width">
+  
+          <div class="container">
+  
+            <div class="banner__content">
+  
+              <div class="banner__heading">
+                <h1>About us</h1>
+                <p>Have a look inside our gallery</p>
+              </div>
+  
+              <div class="breadcrumb">
+                <div class="breadcrumb__home--link"><a href="index.html">Home</a></div>
+                <span></span>
+                <div class="breadcrumb__current--page-link">About</div>
+              </div><!-- .breadcrumb ends -->
+  
+            </div><!-- .banner__content ends -->
+  
+          </div><!-- .container ends -->
+  
+        </section><!-- .banner ends -->
+        <!-- BANNER SECTION ENDS -->
+
+        <div class="container mt-5">
+            <div class="row">
+                {% for image in images %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="#modal{{ image.id }}" data-toggle="modal">
+                            <img src="{{ image.image.url }}" class="card-img-top" alt="{{ image.title }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal{{ image.id }}" tabindex="-1" role="dialog"
+                    aria-labelledby="modal{{ image.id }}Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal{{ image.id }}Label">{{ image.title }}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{{ image.image.url }}" class="img-fluid" alt="{{ image.title }}">
+                                <p>{{ image.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- loading in JQuery locally if CDN failed -->
+<script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+<!-- Owl Carousel script -->
+<script src="{% static 'js/plugins/owl.carousel.js'%}"></script>
+
+<!-- JQuery Credit Card script -->
+<script src="{% static 'js/plugins/jquery.card.js'%}"></script>
+<!-- Animate On Scroll script -->
+<script src="{% static 'js/plugins/aos.js'%}"></script>
+<!-- Lightbox script -->
+<script src="{% static 'js/plugins/lightbox.min.js'%}"></script>
+<!-- Main script -->
+<script src="{% static 'dist/js/main.min.js'%}"></script>
+
+</body>
+</html>
